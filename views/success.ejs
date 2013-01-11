@@ -1,0 +1,24 @@
+<!doctype html>
+<head>
+<meta charset="utf-8" />
+<title>welcome </title>
+</head>
+<body>
+<h1>contents</h1>
+<%= message %>
+<div>
+  <span>UserID</span>
+  <span><%= username %></span>
+</div>
+<div>
+  <span>password</span>
+  <span><%= password %></span>
+</div>
+<form action="/add" method="GET">
+<div>
+  <span>User ID</span>
+  <span><input type="text" name="data" id="data" /></span>
+    <span><button type="submit">add</button></span>
+</div>
+</form>
+</body>

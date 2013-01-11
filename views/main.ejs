@@ -1,0 +1,46 @@
+<!doctype html>
+<head>
+<meta charset="UTF-8" />
+<title>main</title>
+ <link href="stylesheets/main.css" rel="stylesheet"></head>
+
+</head>
+<body>
+<%= message %>
+<div id=list>
+  <span>UserID</span>
+  <span><%= username %></span>
+</div>
+<div>
+  <span>password</span>
+  <span><%= password %></span>
+</div>
+<form action="/add" method="GET">
+<div>
+  <span>User ID</span>
+  <span><input type="text" name="data" id="data" /></span>
+    <span><button type="submit">add</button></span>
+</div>
+</form>
+<canvas width="1036" height="729">お使いのブラウザはHTML5のCanvas要素に対応していません。</canvas>
+
+<ul>
+<li style="background-color:rgba(0,0,0,0.3)"></li>
+<li style="background-color:rgba(255,0,0,0.3)"></li>
+<li style="background-color:rgba(0,255,0,0.3)"></li>
+<li style="background-color:rgba(0,0,255,0.3)"></li>
+<li style="background-color:rgba(255,255,0,0.3)"></li>
+</ul>
+<div id="button">
+<input type="button" id="next" value="次へ" />
+<input type="button" id="back" value="戻る" />
+
+<input type="button" id="save" value="保存" />
+<input type="button" id="load" value="読み込み" />
+</div>
+
+
+<script type="text/javascript" src="http://jsdo.it/lib/jquery-1.8.2/js"></script>
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+<script type="text/javascript" src="javascripts/page.js"></script>
+</body>
